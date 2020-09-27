@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  min-width: 250px;
+}
+
+/* Style the header */
+.header {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+tr {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+tr{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+tr td{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+}
+
+tr th{
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+tr:hover {
+  background: #ddd;
+}
+
